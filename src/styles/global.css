@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+@plugin "daisyui/theme" {
+  name: "silentdestroyer";
+  default: false;
+  prefersdark: false;
+  color-scheme: "dark";
+  --color-base-100: oklch(0.17 0.0038 164.54);
+  --color-base-200: oklch(21% 0.006 285.885);
+  --color-base-300: oklch(27% 0.006 286.033);
+  --color-base-content: oklch(0.99 0.0353 100);
+  --color-primary: oklch(0% 0 0);
+  --color-primary-content: oklch(0.99 0.0353 100);
+  --color-secondary: oklch(58% 0.233 277.117);
+  --color-secondary-content: oklch(96% 0.018 272.314);
+  --color-accent: oklch(76% 0.188 70.08);
+  --color-accent-content: oklch(98% 0.022 95.277);
+  --color-neutral: oklch(27% 0.006 286.033);
+  --color-neutral-content: oklch(0.62 0.0191 106.94);
+  --color-info: oklch(58% 0.158 241.966);
+  --color-info-content: oklch(97% 0.013 236.62);
+  --color-success: oklch(59% 0.145 163.225);
+  --color-success-content: oklch(97% 0.021 166.113);
+  --color-warning: oklch(68% 0.162 75.834);
+  --color-warning-content: oklch(98% 0.026 102.212);
+  --color-error: oklch(58% 0.253 17.585);
+  --color-error-content: oklch(96% 0.015 12.422);
+  --radius-selector: 0.5rem;
+  --radius-field: 0.25rem;
+  --radius-box: 1rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 1;
+  --noise: 0;
+}
+
+@font-face {
+  font-family: 'Melbourne Bold'; /* Choose a name for your font */
+  src: url('../assets/fonts/Melbourne_bold.ttf') format('truetype'); /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Important for performance: prevents invisible text during font loading */
+}
+
+@font-face {
+  font-family: 'PP Mori'; /* Choose a name for your font */
+  src: url('../assets/fonts/PPMori-Regular.otf') format('opentype'); /* Path to your font file */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Important for performance: prevents invisible text during font loading */
+}
+
+@font-face {
+  font-family: 'PP Mori'; /* Choose a name for your font */
+  src: url('../assets/fonts/PPMori-SemiBold.otf') format('opentype'); /* Path to your font file */
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap; /* Important for performance: prevents invisible text during font loading */
+}
+
+@font-face {
+  font-family: 'PP Mori'; /* Choose a name for your font */
+  src: url('../assets/fonts/PPMori-Extralight.otf') format('opentype'); /* Path to your font file */
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap; /* Important for performance: prevents invisible text during font loading */
+}
+
+.melbourne {
+  font-family: "Melbourne Bold";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  font-family: "PP Mori";
+}
